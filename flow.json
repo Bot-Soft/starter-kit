@@ -11,7 +11,7 @@
               "buttons":[
                 {
                   "type":"postback",
-                  "payload":"quick-replies",
+                  "payload":"categories",
                   "title":"🔍 Preview"
                 }              
               ]      
