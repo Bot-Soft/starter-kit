@@ -1,449 +1,504 @@
 {
   "welcome": {
-    "steps": [{
-      "attachment": {
-        "payload": {
-          "elements": [
-            {
-              "title":"Quick Replies",
-              "image_url":"https://botsoft.ai/img/small-logo-fb.png",
-              "subtitle":"Text, Location, Phone Number, Email",
-              "buttons":[
-                {
-                  "type":"postback",
-                  "payload":"categories",
-                  "title":"🔍 Preview"
-                }              
-              ]      
-            },
-            {
-              "title":"Templates",
-              "image_url":"https://botsoft.ai/img/small-logo-fb.png",
-              "subtitle":"Generic, List, Button, Open Graph, Media, Receipt, Airline",
-              "buttons":[
-                {
-                  "type":"postback",
-                  "payload":"templates",
-                  "title":"🔍 Preview"
-                }              
-              ]      
-            },
-            {
-              "title":"Buttons",
-              "image_url":"https://botsoft.ai/img/small-logo-fb.png",
-              "subtitle":"URL, Postback, Share, Buy, Call, Log In, Log Out, Game Play",
-              "buttons":[
-                {
-                  "type":"postback",
-                  "payload":"buttons",
-                  "title":"🔍 Preview"
-                }              
-              ]      
-            }
-          ],
-          "template_type": "generic"
-        },
-        "type": "template"
+    "steps": [
+      {
+        "attachment": {
+          "payload": {
+            "elements": [
+              {
+                "title": "Quick Replies",
+                "image_url": "https://botsoft.ai/img/small-logo-fb.png",
+                "subtitle": "Text, Location, Phone Number, Email",
+                "buttons": [
+                  {
+                    "type": "postback",
+                    "payload": "categories",
+                    "title": "🔍 Preview"
+                  }
+                ]
+              },
+              {
+                "title": "Templates",
+                "image_url": "https://botsoft.ai/img/small-logo-fb.png",
+                "subtitle": "Generic, List, Button, Open Graph, Media, Receipt, Airline",
+                "buttons": [
+                  {
+                    "type": "postback",
+                    "payload": "templates",
+                    "title": "🔍 Preview"
+                  }
+                ]
+              },
+              {
+                "title": "Buttons",
+                "image_url": "https://botsoft.ai/img/small-logo-fb.png",
+                "subtitle": "URL, Postback, Share, Buy, Call, Log In, Log Out, Game Play",
+                "buttons": [
+                  {
+                    "type": "postback",
+                    "payload": "buttons",
+                    "title": "🔍 Preview"
+                  }
+                ]
+              }
+            ],
+            "template_type": "generic"
+          },
+          "type": "template"
+        }
       }
-    }]
+    ]
   },
   "quick-replies": {
-    "steps": [{
-      "text": "Quick Replies!",
-      "quick_replies": [{
-          "content_type": "text",
-          "title": "Text",
-          "payload": "quick-replies",
-          "image_url": "https://botsoft.ai/img/small-logo-fb.png"
-        },
-        {
-          "content_type": "location"
-        },
-        {
-          "content_type": "user_phone_number"
-        },
-        {
-          "content_type": "user_email"
-        }
-      ]
-    }]
+    "steps": [
+      {
+        "text": "Quick Replies!",
+        "quick_replies": [
+          {
+            "content_type": "text",
+            "title": "Text",
+            "payload": "quick-replies",
+            "image_url": "https://botsoft.ai/img/small-logo-fb.png"
+          },
+          {
+            "content_type": "location"
+          },
+          {
+            "content_type": "user_phone_number"
+          },
+          {
+            "content_type": "user_email"
+          }
+        ]
+      }
+    ]
   },
   "templates": {
-    "steps": [{
-      "attachment": {
-        "payload": {
-          "elements": [
-            {
-              "title":"Generic Template",
-              "image_url":"https://botsoft.ai/img/small-logo-fb.png",
-              "subtitle":"Includes a title, subtitle, image, and up to three buttons.",
-              "buttons":[
-                {
-                  "type":"postback",
-                  "payload":"generic-template",
-                  "title":"🔍 Preview"
-                }              
-              ]      
-            },
-            {
-              "title":"List Template",
-              "image_url":"https://botsoft.ai/img/small-logo-fb.png",
-              "subtitle":"A list of 2-4 structured items with an optional button rendered at the bottom.",
-              "buttons":[
-                {
-                  "type":"postback",
-                  "payload":"list-template",
-                  "title":"🔍 Preview"
-                }              
-              ]      
-            },
-            {
-              "title":"Button Template",
-              "image_url":"https://botsoft.ai/img/small-logo-fb.png",
-              "subtitle":"A text message with up to three attached buttons.",
-              "buttons":[
-                {
-                  "type":"postback",
-                  "payload":"button-template",
-                  "title":"🔍 Preview"
-                }              
-              ]      
-            },
-            {
-              "title":"Open Graph Template",
-              "image_url":"https://botsoft.ai/img/small-logo-fb.png",
-              "subtitle":"An Open Graph URL, plus an optional button. Share songs.",
-              "buttons":[
-                {
-                  "type":"postback",
-                  "payload":"open-graph-template",
-                  "title":"🔍 Preview"
-                }              
-              ]      
-            },
-            {
-              "title":"Receipt Template",
-              "image_url":"https://botsoft.ai/img/small-logo-fb.png",
-              "subtitle":"Include an order summary, payment details, and shipping information.",
-              "buttons":[
-                {
-                  "type":"postback",
-                  "payload":"receipt-template",
-                  "title":"🔍 Preview"
-                }              
-              ]      
-            },
-            {
-              "title":"Airline Template",
-              "image_url":"https://botsoft.ai/img/small-logo-fb.png",
-              "subtitle":"Send boarding passes for one or more flights and one more passengers.",
-              "buttons":[
-                {
-                  "type":"postback",
-                  "payload":"airline-template",
-                  "title":"🔍 Preview"
-                }              
-              ]      
-            },
-            {
-              "title":"Media Template",
-              "image_url":"https://botsoft.ai/img/small-logo-fb.png",
-              "subtitle":"send images, GIFs, and video as a structured message with an optional button.",
-              "buttons":[
-                {
-                  "type":"postback",
-                  "payload":"media-template",
-                  "title":"🔍 Preview"
-                }              
-              ]      
-            }
-          ],
-          "template_type": "generic"
-        },
-        "type": "template"
+    "steps": [
+      {
+        "attachment": {
+          "payload": {
+            "elements": [
+              {
+                "title": "Generic Template",
+                "image_url": "https://botsoft.ai/img/small-logo-fb.png",
+                "subtitle": "Includes a title, subtitle, image, and up to three buttons.",
+                "buttons": [
+                  {
+                    "type": "postback",
+                    "payload": "generic-template",
+                    "title": "🔍 Preview"
+                  }
+                ]
+              },
+              {
+                "title": "List Template",
+                "image_url": "https://botsoft.ai/img/small-logo-fb.png",
+                "subtitle": "A list of 2-4 structured items with an optional button rendered at the bottom.",
+                "buttons": [
+                  {
+                    "type": "postback",
+                    "payload": "list-template",
+                    "title": "🔍 Preview"
+                  }
+                ]
+              },
+              {
+                "title": "Button Template",
+                "image_url": "https://botsoft.ai/img/small-logo-fb.png",
+                "subtitle": "A text message with up to three attached buttons.",
+                "buttons": [
+                  {
+                    "type": "postback",
+                    "payload": "button-template",
+                    "title": "🔍 Preview"
+                  }
+                ]
+              },
+              {
+                "title": "Open Graph Template",
+                "image_url": "https://botsoft.ai/img/small-logo-fb.png",
+                "subtitle": "An Open Graph URL, plus an optional button. Share songs.",
+                "buttons": [
+                  {
+                    "type": "postback",
+                    "payload": "open-graph-template",
+                    "title": "🔍 Preview"
+                  }
+                ]
+              },
+              {
+                "title": "Receipt Template",
+                "image_url": "https://botsoft.ai/img/small-logo-fb.png",
+                "subtitle": "Include an order summary, payment details, and shipping information.",
+                "buttons": [
+                  {
+                    "type": "postback",
+                    "payload": "receipt-template",
+                    "title": "🔍 Preview"
+                  }
+                ]
+              },
+              {
+                "title": "Airline Template",
+                "image_url": "https://botsoft.ai/img/small-logo-fb.png",
+                "subtitle": "Send boarding passes for one or more flights and one more passengers.",
+                "buttons": [
+                  {
+                    "type": "postback",
+                    "payload": "airline-template",
+                    "title": "🔍 Preview"
+                  }
+                ]
+              },
+              {
+                "title": "Media Template",
+                "image_url": "https://botsoft.ai/img/small-logo-fb.png",
+                "subtitle": "send images, GIFs, and video as a structured message with an optional button.",
+                "buttons": [
+                  {
+                    "type": "postback",
+                    "payload": "media-template",
+                    "title": "🔍 Preview"
+                  }
+                ]
+              }
+            ],
+            "template_type": "generic"
+          },
+          "type": "template"
+        }
       }
-    }]
+    ]
   },
   "generic-template": {
-    "steps": [{
-      "attachment": {
-        "type": "template",
-        "payload": {
-          "template_type": "generic",
-          "elements": [{
-            "title": "Generic template",
-            "image_url": "https://botsoft.ai/img/small-logo-fb.png",
-            "subtitle": "Includes a title, subtitle, image, and up to three buttons.",
-            "default_action": {
-              "type": "web_url",
-              "url": "https://developers.facebook.com/docs/messenger-platform/send-messages/template/generic",
-              "webview_height_ratio": "tall"
-            },
-            "buttons": [{
-              "type": "web_url",
-              "url": "https://developers.facebook.com/docs/messenger-platform/send-messages/template/generic",
-              "title": "Documentation"
-            }, {
-              "type": "web_url",
-              "url": "https://developers.facebook.com/docs/messenger-platform/reference/template/generic/",
-              "title": "Reference"
-            }, {
-              "type": "postback",
-              "title": "Go back",
-              "payload": "templates"
-            }]
-          }]
+    "steps": [
+      {
+        "attachment": {
+          "type": "template",
+          "payload": {
+            "template_type": "generic",
+            "elements": [
+              {
+                "title": "Generic template",
+                "image_url": "https://botsoft.ai/img/small-logo-fb.png",
+                "subtitle": "Includes a title, subtitle, image, and up to three buttons.",
+                "default_action": {
+                  "type": "web_url",
+                  "url": "https://developers.facebook.com/docs/messenger-platform/send-messages/template/generic",
+                  "webview_height_ratio": "tall"
+                },
+                "buttons": [
+                  {
+                    "type": "web_url",
+                    "url": "https://developers.facebook.com/docs/messenger-platform/send-messages/template/generic",
+                    "title": "Documentation"
+                  },
+                  {
+                    "type": "web_url",
+                    "url": "https://developers.facebook.com/docs/messenger-platform/reference/template/generic/",
+                    "title": "Reference"
+                  },
+                  {
+                    "type": "postback",
+                    "title": "Go back",
+                    "payload": "templates"
+                  }
+                ]
+              }
+            ]
+          }
         }
       }
-    }]
+    ]
   },
   "list-template": {
-    "steps": [{
-      "attachment": {
-        "type": "template",
-        "payload": {
-          "template_type": "list",
-          "top_element_style": "LARGE",
-          "elements": [{
-            "title": "List Template",
-            "image_url": "https://botsoft.ai/img/small-logo-fb.png"
-          }, {
-            "title": "Documentation",
-            "buttons": [{
-              "type": "web_url",
-              "url": "https://developers.facebook.com/docs/messenger-platform/send-messages/template/list",
-              "title": "View"
-            }]
-          }, {
-            "title": "Reference",
-            "buttons": [{
-              "type": "web_url",
-              "url": "https://developers.facebook.com/docs/messenger-platform/reference/template/list/",
-              "title": "View"
-            }]
-          }],
-          "buttons": [{
-            "title": "Go back",
-            "type": "postback",
-            "payload": "templates"
-          }]
+    "steps": [
+      {
+        "attachment": {
+          "type": "template",
+          "payload": {
+            "template_type": "list",
+            "top_element_style": "LARGE",
+            "elements": [
+              {
+                "title": "List Template",
+                "image_url": "https://botsoft.ai/img/small-logo-fb.png"
+              },
+              {
+                "title": "Documentation",
+                "buttons": [
+                  {
+                    "type": "web_url",
+                    "url": "https://developers.facebook.com/docs/messenger-platform/send-messages/template/list",
+                    "title": "View"
+                  }
+                ]
+              },
+              {
+                "title": "Reference",
+                "buttons": [
+                  {
+                    "type": "web_url",
+                    "url": "https://developers.facebook.com/docs/messenger-platform/reference/template/list/",
+                    "title": "View"
+                  }
+                ]
+              }
+            ],
+            "buttons": [
+              {
+                "title": "Go back",
+                "type": "postback",
+                "payload": "templates"
+              }
+            ]
+          }
         }
       }
-    }]
+    ]
   },
   "button-template": {
-    "steps": [{
-      "attachment": {
-        "type": "template",
-        "payload": {
-          "template_type": "button",
-          "text": "This is a button template",
-          "buttons": [{
-              "type": "web_url",
-              "url": "https://developers.facebook.com/docs/messenger-platform/send-messages/template/button",
-              "title": "Documentation"
-            },
-            {
-              "type": "web_url",
-              "url": "https://developers.facebook.com/docs/messenger-platform/reference/template/button/",
-              "title": "Reference"
-            },
-            {
-              "type": "postback",
-              "payload": "templates",
-              "title": "Go back"
-            }
-          ]
+    "steps": [
+      {
+        "attachment": {
+          "type": "template",
+          "payload": {
+            "template_type": "button",
+            "text": "This is a button template",
+            "buttons": [
+              {
+                "type": "web_url",
+                "url": "https://developers.facebook.com/docs/messenger-platform/send-messages/template/button",
+                "title": "Documentation"
+              },
+              {
+                "type": "web_url",
+                "url": "https://developers.facebook.com/docs/messenger-platform/reference/template/button/",
+                "title": "Reference"
+              },
+              {
+                "type": "postback",
+                "payload": "templates",
+                "title": "Go back"
+              }
+            ]
+          }
         }
       }
-    }]
+    ]
   },
   "open-graph-template": {
-    "steps": [{
-      "attachment": {
-        "type": "template",
-        "payload": {
-          "template_type": "open_graph",
-          "elements": [{
-            "url": "https://open.spotify.com/track/7GhIk7Il098yCjg4BQjzvb",
-            "buttons": [{
-                "type": "web_url",
-                "url": "https://developers.facebook.com/docs/messenger-platform/send-messages/template/open-graph",
-                "title": "Documentation"
-              },
+    "steps": [
+      {
+        "attachment": {
+          "type": "template",
+          "payload": {
+            "template_type": "open_graph",
+            "elements": [
               {
-                "type": "web_url",
-                "url": "https://developers.facebook.com/docs/messenger-platform/reference/template/open-graph/",
-                "title": "Reference"
-              }, {
-                "type": "postback",
-                "payload": "templates",
-                "title": "Go back"
+                "url": "https://open.spotify.com/track/7GhIk7Il098yCjg4BQjzvb",
+                "buttons": [
+                  {
+                    "type": "web_url",
+                    "url": "https://developers.facebook.com/docs/messenger-platform/send-messages/template/open-graph",
+                    "title": "Documentation"
+                  },
+                  {
+                    "type": "web_url",
+                    "url": "https://developers.facebook.com/docs/messenger-platform/reference/template/open-graph/",
+                    "title": "Reference"
+                  },
+                  {
+                    "type": "postback",
+                    "payload": "templates",
+                    "title": "Go back"
+                  }
+                ]
               }
             ]
-          }]
+          }
         }
       }
-    }]
+    ]
   },
   "media-template": {
-    "steps": [{
-      "attachment": {
-        "type": "template",
-        "payload": {
-          "template_type": "media",
-          "elements": [{
-            "media_type": "video",
-            "url": "https://www.facebook.com/WatchLifeUnfiltered/videos/304754707030606/",
-            "buttons": [{
-                "type": "web_url",
-                "url": "https://developers.facebook.com/docs/messenger-platform/send-messages/template/media",
-                "title": "Documentation"
-              },
+    "steps": [
+      {
+        "attachment": {
+          "type": "template",
+          "payload": {
+            "template_type": "media",
+            "elements": [
               {
-                "type": "web_url",
-                "url": "https://developers.facebook.com/docs/messenger-platform/reference/template/media",
-                "title": "Reference"
-              },
-              {
-                "type": "postback",
-                "payload": "templates",
-                "title": "Go back"
+                "media_type": "video",
+                "url": "https://www.facebook.com/WatchLifeUnfiltered/videos/304754707030606/",
+                "buttons": [
+                  {
+                    "type": "web_url",
+                    "url": "https://developers.facebook.com/docs/messenger-platform/send-messages/template/media",
+                    "title": "Documentation"
+                  },
+                  {
+                    "type": "web_url",
+                    "url": "https://developers.facebook.com/docs/messenger-platform/reference/template/media",
+                    "title": "Reference"
+                  },
+                  {
+                    "type": "postback",
+                    "payload": "templates",
+                    "title": "Go back"
+                  }
+                ]
               }
             ]
-          }]
+          }
         }
       }
-    }]
+    ]
   },
   "receipt-template": {
-    "steps": [{
-      "attachment": {
-        "type": "template",
-        "payload": {
-          "template_type": "receipt",
-          "recipient_name": "Stephane Crozatier",
-          "order_number": "12345678902",
-          "currency": "USD",
-          "payment_method": "Visa 2345",
-          "order_url": "https://developers.facebook.com/docs/messenger-platform/send-messages/template/receipt",
-          "timestamp": "1428444852",
-          "address": {
-            "street_1": "1 Hacker Way",
-            "street_2": "12",
-            "city": "Menlo Park",
-            "postal_code": "94025",
-            "state": "CA",
-            "country": "US"
-          },
-          "summary": {
-            "subtotal": 75.00,
-            "shipping_cost": 4.95,
-            "total_tax": 6.19,
-            "total_cost": 56.14
-          },
-          "adjustments": [{
-              "name": "New Customer Discount",
-              "amount": 20
+    "steps": [
+      {
+        "attachment": {
+          "type": "template",
+          "payload": {
+            "template_type": "receipt",
+            "recipient_name": "Stephane Crozatier",
+            "order_number": "12345678902",
+            "currency": "USD",
+            "payment_method": "Visa 2345",
+            "order_url": "https://developers.facebook.com/docs/messenger-platform/send-messages/template/receipt",
+            "timestamp": "1428444852",
+            "address": {
+              "street_1": "1 Hacker Way",
+              "street_2": "12",
+              "city": "Menlo Park",
+              "postal_code": "94025",
+              "state": "CA",
+              "country": "US"
             },
-            {
-              "name": "$10 Off Coupon",
-              "amount": 10
-            }
-          ],
-          "elements": [{
-              "title": "Classic White T-Shirt",
-              "subtitle": "100% Soft and Luxurious Cotton",
-              "quantity": 2,
-              "price": 50,
-              "currency": "USD",
-              "image_url": "https://cdn.pixabay.com/photo/2017/01/13/04/56/blank-1976334_960_720.png"
+            "summary": {
+              "subtotal": 75,
+              "shipping_cost": 4.95,
+              "total_tax": 6.19,
+              "total_cost": 56.14
             },
-            {
-              "title": "Classic Gray T-Shirt",
-              "subtitle": "100% Soft and Luxurious Cotton",
-              "quantity": 1,
-              "price": 25,
-              "currency": "USD",
-              "image_url": "https://mbtskoudsalg.com/images/gray-shirt-png-8.png"
-            }
-          ]
-        }
-      },
-      "quick_replies": [{
-        "content_type": "text",
-        "title": "Go back",
-        "payload": "templates"
-      }]
-    }]
+            "adjustments": [
+              {
+                "name": "New Customer Discount",
+                "amount": 20
+              },
+              {
+                "name": "$10 Off Coupon",
+                "amount": 10
+              }
+            ],
+            "elements": [
+              {
+                "title": "Classic White T-Shirt",
+                "subtitle": "100% Soft and Luxurious Cotton",
+                "quantity": 2,
+                "price": 50,
+                "currency": "USD",
+                "image_url": "https://cdn.pixabay.com/photo/2017/01/13/04/56/blank-1976334_960_720.png"
+              },
+              {
+                "title": "Classic Gray T-Shirt",
+                "subtitle": "100% Soft and Luxurious Cotton",
+                "quantity": 1,
+                "price": 25,
+                "currency": "USD",
+                "image_url": "https://mbtskoudsalg.com/images/gray-shirt-png-8.png"
+              }
+            ]
+          }
+        },
+        "quick_replies": [
+          {
+            "content_type": "text",
+            "title": "Go back",
+            "payload": "templates"
+          }
+        ]
+      }
+    ]
   },
   "airline-template": {
-    "steps": [{
-      "attachment": {
-        "type": "template",
-        "payload": {
-          "template_type": "airline_boardingpass",
-          "intro_message": "You are checked in.",
-          "locale": "en_US",
-          "boarding_pass": [{
-            "passenger_name": "SMITH NICOLAS",
-            "pnr_number": "CG4X7U",
-            "seat": "74J",
-            "logo_image_url": "https://botsoft.ai/img/small-logo-fb.png",
-            "header_image_url": "https://botsoft.ai/img/small-logo-fb.png",
-            "qr_code": "M1SMITH/NICOLAS  CG4X7U nawouehgawgnapwi3jfa0wfh",
-            "above_bar_code_image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/QR_code_for_mobile_English_Wikipedia.svg/220px-QR_code_for_mobile_English_Wikipedia.svg.png",
-            "auxiliary_fields": [{
-                "label": "Terminal",
-                "value": "T1"
-              },
+    "steps": [
+      {
+        "attachment": {
+          "type": "template",
+          "payload": {
+            "template_type": "airline_boardingpass",
+            "intro_message": "You are checked in.",
+            "locale": "en_US",
+            "boarding_pass": [
               {
-                "label": "Departure",
-                "value": "30OCT 19:05"
+                "passenger_name": "SMITH NICOLAS",
+                "pnr_number": "CG4X7U",
+                "seat": "74J",
+                "logo_image_url": "https://botsoft.ai/img/small-logo-fb.png",
+                "header_image_url": "https://botsoft.ai/img/small-logo-fb.png",
+                "qr_code": "M1SMITH/NICOLAS  CG4X7U nawouehgawgnapwi3jfa0wfh",
+                "above_bar_code_image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/QR_code_for_mobile_English_Wikipedia.svg/220px-QR_code_for_mobile_English_Wikipedia.svg.png",
+                "auxiliary_fields": [
+                  {
+                    "label": "Terminal",
+                    "value": "T1"
+                  },
+                  {
+                    "label": "Departure",
+                    "value": "30OCT 19:05"
+                  }
+                ],
+                "secondary_fields": [
+                  {
+                    "label": "Boarding",
+                    "value": "18:30"
+                  },
+                  {
+                    "label": "Gate",
+                    "value": "D57"
+                  },
+                  {
+                    "label": "Seat",
+                    "value": "74J"
+                  },
+                  {
+                    "label": "Sec.Nr.",
+                    "value": "003"
+                  }
+                ],
+                "flight_info": {
+                  "flight_number": "KL0642",
+                  "departure_airport": {
+                    "airport_code": "JFK",
+                    "city": "New York",
+                    "terminal": "T1",
+                    "gate": "D57"
+                  },
+                  "arrival_airport": {
+                    "airport_code": "AMS",
+                    "city": "Amsterdam"
+                  },
+                  "flight_schedule": {
+                    "departure_time": "2016-01-02T19:05",
+                    "arrival_time": "2016-01-05T17:30"
+                  }
+                }
               }
-            ],
-            "secondary_fields": [{
-                "label": "Boarding",
-                "value": "18:30"
-              },
-              {
-                "label": "Gate",
-                "value": "D57"
-              },
-              {
-                "label": "Seat",
-                "value": "74J"
-              },
-              {
-                "label": "Sec.Nr.",
-                "value": "003"
-              }
-            ],
-            "flight_info": {
-              "flight_number": "KL0642",
-              "departure_airport": {
-                "airport_code": "JFK",
-                "city": "New York",
-                "terminal": "T1",
-                "gate": "D57"
-              },
-              "arrival_airport": {
-                "airport_code": "AMS",
-                "city": "Amsterdam"
-              },
-              "flight_schedule": {
-                "departure_time": "2016-01-02T19:05",
-                "arrival_time": "2016-01-05T17:30"
-              }
-            }
-          }]
-        }
-      },
-      "quick_replies": [{
-        "content_type": "text",
-        "title": "Go back",
-        "payload": "templates"
-      }]
-    }]
+            ]
+          }
+        },
+        "quick_replies": [
+          {
+            "content_type": "text",
+            "title": "Go back",
+            "payload": "templates"
+          }
+        ]
+      }
+    ]
   }
 }
